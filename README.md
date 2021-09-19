@@ -1,5 +1,7 @@
 # chronologify
 
+![Build Status](https://github.com/dawnj/chronologify/workflows/build/badge.svg)
+
 A web application to create playlists of artists' tracks in chronological order.
 
 ## Technologies
@@ -40,6 +42,12 @@ Now that your prerequisites are configured, you can set up the project.
 
 1. Configure PyCharm to use the above virtualenv.
 1. Close and reopen your terminal.
+
+### How to run the tests
+
+```shell
+poetry run pytest
+```
 
 [flask]: https://flask.palletsprojects.com/en/2.0.x/#
 [homebrew]: https://brew.sh

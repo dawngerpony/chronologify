@@ -1,0 +1,14 @@
+name: run-tests
+on: [push]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Set up Poetry
+        uses: Gr1N/setup-poetry@v7
+      - name: poetry install
+        run: poetry install
+      - name: Run tests
+        run: poetry run pytest
