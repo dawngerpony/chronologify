@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: Gr1N/setup-poetry@v7
 #      - uses: cclauss/GitHub-Action-for-pytest@0.5.0
-      - run: echo hi
+      - run: poetry run pytest
