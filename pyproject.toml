@@ -6,6 +6,7 @@ authors = ["Dawn James <dawnjames2105@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+Flask = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"
