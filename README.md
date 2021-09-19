@@ -1,5 +1,7 @@
 # chronologify
 
+![Build Status](https://github.com/dawnj/chronologify/workflows/build/badge.svg)
+
 A web application to create playlists of artists' tracks in chronological order.
 
 ## Technologies
