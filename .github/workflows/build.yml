@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Set up Poetry
         uses: Gr1N/setup-poetry@v7
+      - name: poetry install
+        run: poetry install
 #      - name: Run pytest
 #        uses: cclauss/GitHub-Action-for-pytest@0.5.0
       - name: Run tests
