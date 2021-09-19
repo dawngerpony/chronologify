@@ -4,6 +4,11 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: Gr1N/setup-poetry@v7
-#      - uses: cclauss/GitHub-Action-for-pytest@0.5.0
-      - run: poetry run pytest
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Set up Poetry
+        uses: Gr1N/setup-poetry@v7
+#      - name: Run pytest
+#        uses: cclauss/GitHub-Action-for-pytest@0.5.0
+      - name: Run tests
+        run: poetry run pytest
